@@ -5,6 +5,7 @@ title: Decomposition of anti-commutative algebra
 on a irreducible Sn-submodules when n = 4
 
 """
+Import numpy as np
 
 def innerProd(s, m, k, o):
     """
@@ -84,6 +85,7 @@ def getRep():
     return m
 
 m = getRep()
+p = getPartition()
 w = ""
 for i in range(5):
     w += str(m[i])+"*M"+str(tuple(p[i]))+" + "
